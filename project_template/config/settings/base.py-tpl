@@ -17,7 +17,7 @@ import sys
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # make sure our apps directory is on the python path
-sys.path.append(str(BASE_DIR) / "apps")
+sys.path.append(str(BASE_DIR / "apps"))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/{{ docs_version }}/howto/deployment/checklist/
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
