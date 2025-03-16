@@ -14,8 +14,13 @@ You can use these by referring to their release files during project/app creatio
     # to start an app
     ./manage.py startapp --template https://github.com/shezi/django-better-project-template/releases/download/1.0.1/app_template.zip <app_name>
 
+I also host the files on my domain for shorter paths:
 
-uv run --with=django \
+    uv run --with=django \
            django-admin startproject \
            --extension=py,toml,md \
-           --template=
+           --template=https://shezi.de/project_template.zip \
+           <project_name>
+
+    # to start an app
+    ./manage.py startapp --template https://shezi.de/project_template.zip <app_name>; mv <app_name> apps/
