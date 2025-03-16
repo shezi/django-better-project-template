@@ -8,11 +8,11 @@ You can use these by referring to their release files during project/app creatio
     uv run --with=django \
            django-admin startproject \
            --extension=py,toml,md \
-           --template=https://github.com/shezi/django-better-project-template/releases/download/1.0.1/project_template.zip \
+           --template=https://github.com/shezi/django-better-project-template/releases/download/2.0.0/project_template.zip \
            <project_name>
 
     # to start an app
-    ./manage.py startapp --template https://github.com/shezi/django-better-project-template/releases/download/1.0.1/app_template.zip <app_name>
+    ./manage.py startapp --template https://github.com/shezi/django-better-project-template/releases/download/2.0.0/app_template.zip <app_name>
 
 I also host the files on my domain for shorter paths:
 
